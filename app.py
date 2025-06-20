@@ -5,11 +5,17 @@ from PyQt6 import QtGui
 
 class MainWindow(QMainWindow):
     """Ventana principal de la aplicación de cálculo de áreas.
-
+    
     Esta clase maneja la interfaz gráfica principal y la lógica de interacción
-    para calcular áreas de diferentes figuras geométricas. Utiliza el archivo
-    generado automáticamente por Qt Designer (`Ui_MainWindow`) y conecta las
-    acciones del menú con funciones para solicitar datos y mostrar los resultados.
+    para calcular áreas de diferentes figuras geométricas.
+
+    Attributes:
+        ui (Ui_MainWindow): Instancia de la interfaz de usuario.
+        actionSalir (QAction): Acción para salir de la aplicación.
+        actionCirculo (QAction): Acción para calcular área de círculo.
+        actionTriangulo (QAction): Acción para calcular área de triángulo.
+        actionRectangulo (QAction): Acción para calcular área de rectángulo.
+        actionCuadrado (QAction): Acción para calcular área de cuadrado.
     """
 
     def __init__(self):

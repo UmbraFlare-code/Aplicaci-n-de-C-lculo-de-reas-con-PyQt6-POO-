@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora de Áreas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCalculoAreas">
+    <property name="title">
+     <string>&amp;Cálculo de Áreas</string>
+    </property>
+    <addaction name="actionCirculo"/>
+    <addaction name="actionTriangulo"/>
+    <addaction name="actionRectangulo"/>
+    <addaction name="actionCuadrado"/>
+   </widget>
+   <widget class="QMenu" name="menuSalir">
+    <property name="title">
+     <string>&amp;Salir</string>
+    </property>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuCalculoAreas"/>
+   <addaction name="menuSalir"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <!-- Aquí abajo van las acciones como hijos directos -->
+  <action name="actionCirculo">
+   <property name="text">
+    <string>Círculo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionTriangulo">
+   <property name="text">
+    <string>Triángulo</string>
+   </property>
+  </action>
+  <action name="actionRectangulo">
+   <property name="text">
+    <string>Rectángulo</string>
+   </property>
+  </action>
+  <action name="actionCuadrado">
+   <property name="text">
+    <string>Cuadrado</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
